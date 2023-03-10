@@ -2,4 +2,4 @@
 ## Labs and datasets are housed on this page
 
 1. [Lab1](Week1.html)
-2. [Week2](./Week 2/)
+2. [Week2](./Week_2/)

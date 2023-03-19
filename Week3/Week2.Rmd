@@ -1,0 +1,150 @@
+---
+title: "Week 2 Lab"
+author: 'Instructor: Saanchi Shah'
+date: "2023-03-07"
+output: html_document
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+## Lecture outline
+\tableofcontents
+
+```{r, message = FALSE}
+library(dplyr)
+library(tidyverse)
+```
+
+
+## Overview
+
+Last week, we performed some basic operations to read in the HP characters file as selecting for witches/wizards based on their House and then we created a new smaller dataset. This week, we will start reading in files from the official website for the City of New York. Specifically, we will work with the NYC Health and Nutrition Examination Survey files which can be found [here](https://www.nyc.gov/site/doh/data/data-sets/new-york-city-health-and-nutrition-examination-survey-documentation.page). I will take stock of how we're doing and may have to make changes to our workflow. However, I would still like you to learn how to 'merge' files which is extremely useful for data scientists. You 'may' NOT have to merge for your final project but at least you will be equipped with this knowledge. For the next few weeks, we will use this data to keep learning more about coding and for you to be able to apply these skills to your homework and your final project. Please take some time to get familiarized with the data.
+
+By the end of this course, my hope is that you will have learned to work with different types of data through your assignments and the project in the realm of MCH. 
+
+
+## What is our goal?
+
+This week, we will learn cooler ways to select and filter variables and begin to perform some basic statistical procedures. First, we will read in the SPfile. 
+
+```{r}
+
+spi_nyc <- read.csv("/Users/saanchishah/Desktop/Spring_files/NYC/spi_nyc.csv")
+
+```
+
+## Selecting variables
+
+Next, we want to select for certain variables. We learned one way to do so last week. However, there is an easier way. We can use the function "select()" to achieve that! Look up the documentation for selecting variables. 
+
+```{r}
+
+# Recall variable selection from the last lecture
+spi_nyc_race <- spi_nyc$race_eth
+
+# This will simply extract the race_eth variable and create a new dataset
+# This is not very helpful, what if we have multiple variables to extract?
+
+spi_nyc_new <- spi_nyc[  ,c("race_eth", "riagendr", "capicmt")] # and so forth
+
+# We made use of the concatenate function since we're combinining several columns for extraction
+
+spi_nyc_new <- select(spi_nyc, race_eth, riagendr, capicmt) # also works
+```
+
+
+## Pipes are the best
+
+Before we move on, let's briefly talk about a game-changing function known as **pipes**. Think of pipes as connectors. Just like the pipes we know of in the real world, pipes in R can chain functions together precluding the use long lines of code. Instead of writing the above line and then writing another line for subsetting a variables such as 'race_eth', we can do that in a single shot. Let's look at an example.
+
+```{r, eval = FALSE}
+spi_nyc %>% 
+  select(race_eth, riagendr, capicmt)
+
+# You can either assign it back to spi_nyc or use a new name for the df
+# Notice how you don't have to use spi_nyc$var anymore because it's saying:
+# Use spi_nyc and then select these variables...
+
+```
+**Use the shortcut 'command + shift + m' to insert pipes.**
+
+## Filtering
+
+In order to filter by specific response values we can use the "filter()" function. Look up the documentation for filtering variables.
+
+```{r, eval = FALSE}
+
+# Recall how we extracted Gryffindors only?
+# We could have written the code out as: filter(House == "Gryffindor")
+# Let's try to filter by race_eth == 1
+
+spi_nyc %>% 
+  filter(race_eth == 1) # What does '1' stand for?
+
+```
+
+Let's try using pipes again.
+
+```{r, eval = FALSE}
+spi_nyc %>% 
+  select(race_eth, riagendr, capicmt) %>% # You can run pieces of piped code to look for errors
+  # I noticed capicmt has too many missing observations..
+  filter(!is.na(capicmt))
+
+# How many observations does the table have after filtering? How many was it before filtering?
+```
+
+
+Let's count number of females and males based on lab 1 using pipes
+```{r}
+# Left blank deliberately
+
+
+```
+
+Let's select some more variables to perform some stats now.
+
+```{r}
+spi_nyc %>% 
+  select(riaageyr) %>%
+  summary() # This is me being lazy
+ 
+# What if you want the mean only? or the median? or the standard deviation? 
+
+spi_nyc %>% 
+  select(riaageyr) %>%
+  summarize(mean_age = mean(riaageyr, na.rm = TRUE))
+# Must always use this to remove missing because we don't want to factor that in our calculations
+# In this case, you do not have to use two == signs
+ 
+# We can do multiple things within 'summarize'
+
+spi_nyc %>% 
+  select(riaageyr) %>%
+  summarize(mean_age = mean(riaageyr, na.rm = TRUE),
+            median_age = median(riaageyr, na.rm = TRUE),
+            std_age = sd(riaageyr, na.rm = TRUE))
+```
+Note: == is used to compare two values, while = is used to assign a value to a variable.
+
+## Student exercise
+1. Use this dataset to select variables of your choice using pipes. Before you 'select' them, investigate the type of variables to understand if you can use them for data managament. Show your code.
+2. Filter by specific values using any variable of your choice within the filter function. Again, use pipes
+3. Finally, perform any statistical operation of your choice from among these variables.
+
+## To do
+1. Hadley Wickham has a style guide for coding. Please refer to it as you keep working on your assignments [here.](http://adv-r.had.co.nz/Style.html)
+
+2. If we have time, let's all read section 5.1 - 5.2.4 on [Data Transformation](https://r4ds.had.co.nz/transform.html#introduction-2) although the exercises can be done in your own time.
+
+3. You MUST solve datacamp chapter 7 on 'filtering, grouping, and summarizing' before Week 4. Here is the [link](https://campus.datacamp.com/courses/effective-data-storytelling-using-the-tidyverse/filtering-grouping-summarizing?ex=1). **Focus on logical operators, overall mean and median, summarizing and grouping by multiple variables.** 
+
+```{r, fig.width = 2, fig.align='center'}
+knitr::include_graphics("/Users/saanchishah/Desktop/Spring_files/standards.jpg")
+
+```
+
+

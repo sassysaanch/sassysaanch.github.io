@@ -1,0 +1,144 @@
+---
+title: "Week 4 Lab"
+author: 'Instructor: Saanchi Shah'
+date: "2023-03-08"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, message = FALSE}
+library(tidyverse)
+library(dplyr)
+
+
+
+```
+
+## Overview
+
+This week, we will begin by performing a merge between the CAPI and SPI files. Then, we will spend time re-applying our knowledge pertaining to the functions we have learned so far to work with this data to generate some descriptive stats. We will also learn how to create a new variable, keeping in mind that R is essentially a calculator. As discussed earlier, our schedule is flexible, however, today's lab does mark the end of dplyr/tidyverse and we will begin with data visualization starting next week. However, there is no way to keep going without continuing to build on everything we have learned thus far. We will simply switch gears to spend more time on plotting data and performing statistical testing in order to complete the final project.  
+
+First, read in the files.
+```{r}
+spi_nyc <- read.csv("/Users/saanchishah/Desktop/Spring_files/NYC/spi_nyc.csv")
+
+capi_nyc <- read.csv("/Users/saanchishah/Desktop/Spring_files/NYC/capi_nyc.csv")
+```
+
+## Merging datasets
+
+Now, let's do something very cool (imagine attempting to do this in excel).
+We are going to joint the two datasets to work with one comprehensive df. What is a key? And what is the key in this situation?
+
+```{r}
+merged_nyc <- inner_join(spi_nyc, capi_nyc, by = "SP_ID")
+```
+How many rows and columns does this new datatset have? Does that make sense?
+
+Use the head function and observe the first 10 rows to look at your newly created dataset. Great!
+I am going to select a few variables I think will be useful for us to work with. Your task was to prepare a list of variables for your work so your variables may very well be different than mine (I hope they are).
+```{r}
+
+merged_nyc %>% 
+  select(DBQ090G, # How many times/week eat restaurant meals?
+         DBQ102G, # How often eat dark green vegetables?
+         DBQ107G, # How often eat fresh fruits?
+         DIQ010,  # Ever told you have diabetes?
+         HIQ012,  # have health insurance?
+         WHQ010f, # Self-reported height in feet
+         WHQ010i, # Self reported height in inches, # The ht in metres var seems to be iffy
+         WHQ025K, # Self reported weight in kgs
+         RHQ142,  # Are you pregnant now?
+         RHQ160,  # How many times have you been pregnant?
+         RHQ170,  # Number of live birth pregnancies
+         RHQ210,  # Ever breastfed any of the children?
+         PUQ017,  # Household pesticide use
+         INQ640,  # Income total estimate
+         SMQ020,  # Ever smoker - 100 cigs/lifetime
+         SMQ040,  # Current smoker?
+         riagendr,# Gender
+         riaageyr,# Age at the time of screening
+         race_eth,# Recoded race/ethnicity
+         SP_ID,   # ID of the person
+         ) -> merged_nyc_subset
+
+
+```
+
+## Creating new variables
+
+Let's now move on to the creation of a new variable using the mutate() function. I am going to create a variable for bmi. BMI = weight in kgs/(ht in m)^2. Remember R is a calculator!
+```{r}
+merged_nyc_subset = 
+  merged_nyc_subset %>% 
+  mutate(ht_inch = WHQ010f*12, # The syntax is mutate(newvar = perform whatever)
+         newheight = WHQ010i + ht_inch,
+         height_m = newheight*0.0254,
+         bmi = WHQ025K/(height_m)^2) # converting height in inches, 1 foot = 12 inches 
+
+
+# The problem is a lot of weight obs are missing, so let's filter those out
+
+merged_nyc_subset %>% 
+  filter(!is.na(WHQ025K) & !is.na(height_m)) 
+
+```
+
+## Using if_else to recode variables
+This is an important function which can be used along with mutate() - we may not be able to do this today, we will pick up here next week. For instance, we wanted to split BMI into underweight, healthy, overwwight, obese. 
+
+```{r, eval = FALSE}
+
+library(magrittr)
+
+# check if _R_USE_PIPEBIND_ environment variable is set
+if (!"TRUE" %in% Sys.getenv("_R_USE_PIPEBIND_", unset = NA)) {
+  # set _R_USE_PIPEBIND_ environment variable
+  Sys.setenv("_R_USE_PIPEBIND_" = "TRUE")
+}
+
+
+# Here's what would be easier but inaccurate:
+merged_nyc_subset %>% 
+  mutate(newvar = if_else(bmi > 30, 'obese', 'not-obese'))
+
+#OR
+
+merged_nyc_subset %>% 
+  mutate(newvar = if_else(bmi <= 25, 1, 0))
+       
+       # The below is a little complicated so don't worry, let's just follow the logic
+merged_nyc_subset <- merged_nyc_subset %>%
+  mutate(bmirange = if_else(bmi < 18.5, 'underweight',
+                            if_else(bmi >= 18.5 & bmi < 25, 'normal',
+                                    if_else(bmi >= 25 & bmi <= 30, 'overweight',
+                                            if_else(bmi > 30, 'obese', NA_character_)))))
+
+```
+
+
+## Student Exercise
+
+1. If you were following so far, start working on the variables you wanted to select and modify the code accordingly
+2. Rename the variables so it is easier to understand what is going on
+3. You may also work with the variables I provided and perform descriptive stats for the reproductive health and diet variables.
+4. Next, start thinking about how you could potentially observe trends between variables. For example, I think it would be interesting to understand reproductive health by different racial/ethnic groups or observing insurance status by race/ethnicity could also be interesting. Likewise, what questions would you be interested in?
+Hint: In week one, we used the table function but for one variable only. What if you could simply include two variables of interest within the function? Try it! Again, you will need to know the codes for the responses. 
+
+## To do
+1. Read up documentation on Recoding Data [here](https://www.sfu.ca/~mjbrydon/tutorials/BAinR/recode.html).
+
+2. Read documentation on ggplot [here](https://ggplot2.tidyverse.org). Also provides cheat sheets.
+
+
+```{r, fig.align='center', echo=FALSE}
+
+knitr::include_graphics("/Users/saanchishah/Desktop/Spring_files/dream.png")
+
+```
+
+
+

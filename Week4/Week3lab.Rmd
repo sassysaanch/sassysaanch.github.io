@@ -1,0 +1,111 @@
+---
+title: "Week 3 lab"
+author: 'Instructor: Saanchi Shah'
+date: "2023-03-07"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Overview
+
+This week we will continue working with the spi_nyc file to rename some variables and learn how to summarize after grouping variables. We will also learn a little more about logical operators.
+
+First, read in the file.
+```{r}
+spi_nyc <- read.csv("/Users/saanchishah/Desktop/Spring_files/NYC/spi_nyc.csv")
+```
+
+Let's load a new package this week in addition to dplyr and tidyverse. 
+```{r, message = FALSE}
+
+library(mosaic)
+library(tidyverse)
+library(dplyr)
+```
+
+
+## Tally function
+
+Recall from last lab how we used different functions to summarize **numeric** variables. What if we want to achieve the same for character variables without recoding variables (more on recoding later)?
+```{r}
+
+summary(spi_nyc$DMQ111e) # Is this helpful?
+
+tally(spi_nyc$DMQ111e)
+
+```
+
+## Renaming variables
+
+Next, start renaming variables. The function to rename variables is 'rename'. Before we rename the variables, let's take a look at the variables. 
+
+
+```{r}
+
+names(spi_nyc)
+
+# View(spi_nyc)
+
+head(spi_nyc, n = 5)
+
+```
+
+How are each of the above functions similar or different?
+
+Let's look at the syntax for renaming variables now.
+
+```{r}
+spi_nyc %>% 
+  rename('Country' = "DMQ111e",
+                   'State' = "DMQ130e") %>% 
+  head(n = 5)
+
+# rename(new_var = old_var)
+```
+
+Did this actually change the variable names in the spi_nyc dataframe or do we need to do something such that they are permanently stored in the original df?
+
+## Logical operators
+Logical operators are really important because they help us perform operations. We have already been using some and if I were more organized, I would have talked about logical operators earlier. Welp. Hopefully, datacamp was helpful in going over logical operators and describing how and when to use summarizing and grouping functions. 
+
+## Group_by function
+
+What if we want to understand the distribution of age by country of birth?        
+
+```{r}
+spi_nyc %>% 
+  rename('Country' = "DMQ111e",
+         'Age' = "riaageyr") %>% 
+  group_by(Country) %>% 
+  summarise(mean_age = mean(Age, na.rm = TRUE)) # Remember, R is case-sensitive
+         
+```
+
+## Student Exercise
+
+1. What if we wanted to group by more than one variable. What would the syntax look like?
+2. In a new code chunk, rename the variable DMQ130e as state. Then group by state and calculate the minimum and maximum ages (you may rename the riaageyr variable as well if you would like to). 
+3. How many Cuban Americans are in this dataset? You may want to rename the variable and then show the count. 
+
+## To do
+
+1. Go through 'The dplyr Package' on Dr. Stephanie Hick's website (JHU Professor) [here](https://www.stephaniehicks.com/jhustatcomputing2022/posts/2022-09-06-managing-data-frames-with-tidyverse/#the-dplyr-package). We will mostly only learn the 'mutate()' function next week but this lecture will provide you with a nice overview of the functions we have learned so far. 
+
+I think that collaboration is key in science. It's really great that such wonderful professors have opened the doors for non-JHU students to learn from them./ Feel free to follow her. I wish that in we'd been taught R in our MPH. Unfortunately, we primarily used SAS. Who even uses SPSS and stata? They're still using outdated lectures/homeworks. Even though I am aiming to graduate next year, I really wanted to ensure that students in this class can leave thinking 'alright, I kind of see what the fuss is about." I had to learn to use R through random stats classes during my PhD, then I had a long break from coding due to my clinical track and I had to methodically re-learn from Dr. Ozan Jaquette in Education. He is a phenomenal professor and his notes are also open to the public! The point of my spiel is that we must all learn to work together and make use of all the free resources to get better!
+
+2. In preparation for next week you will read up on 'joins'/ 'merging' data [here](https://bookdown.org/ndphillips/YaRrr/merge-combining-data.html). Also, read up on 'inner joins' [here](https://statisticsglobe.com/r-dplyr-join-inner-left-right-full-semi-anti). Of course, I would be thrilled if you read through all the different types of joins mentioned on this page.
+
+3. You will also go through the codebook and prepare a list of about 15 variables(at the very least) you would want to keep in your merged dataset (spi_nyc + capi_nyc). You should have already glanced at the codebook once so far.  
+
+3. Optional resource: DataCamp chapter 8 Dplyr Review can be accessed [here](https://campus.datacamp.com/courses/effective-data-storytelling-using-the-tidyverse/dplyr-review?ex=1)
+
+```{r, fig.align='center', echo=FALSE}
+knitr::include_graphics("/Users/saanchishah/Desktop/Spring_files/argh.png")
+
+```
+
+
+

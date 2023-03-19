@@ -1,0 +1,58 @@
+---
+title: "Lab 5"
+author: 'Instructor: Saanchi Shah'
+date: "2023-03-10"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Overview
+
+This week, we will continue working on our merged NYC (subset file) file to start visualizing our data. As you likley know, we need to start by installing the ggplot package. 
+
+To load the file you could either call it in by re-running lab 4 which is very inefficient OR by saving it as an R object so that it's easy to re-load it. However, in the interest of time and to save you from more code, it's okay to just re-run lab 4 if the file does not exist in your environment.
+
+**You will ignore this step**
+
+```{r}
+merged_nyc_subset <- readRDS(file = file.path("/Users/saanchishah/Desktop/Spring_files/NYC", 'merged_nyc.rds'))
+```
+
+# Using ggplot2
+
+While I persnally prefer the ggplot package for data visualization, base R also has functions to do so. If this is too overwhelming for you, you may skip it. I just wanted you to be aware that R is amazing when it comes to visualization. 
+```{r, message=FALSE}
+library(tidyverse)
+library(ggplot2)
+```
+
+There are a myriad of ways to plot the data. I will show you a couple of examples and we will spend the remainder of class time practising the same using different variables/plots of your choice. 
+
+```{r}
+merged_nyc_subset %>% 
+  ggplot(mapping = aes(x = race_eth, y = riaageyr)) +
+  geom_jitter()
+```
+You can use geom_point() for continuous variable. There are options for histogram, boxplots etc. but you don't have to do use any of those if this is giving you a headache. Of course, I can help you plot if you really want to learn how to go about it. Please use the cheat sheet as it's useful to understand what kind of plot to use for plotting different types of X and Y variables. However, to keep it simple, we can simply focus on learning how to create a scatter plot, which means 1) one of your variables must be continuous and one must be categorical or 2) both the vars must be continuous. 
+
+```{r, message=FALSE}
+merged_nyc_subset %>% 
+ ggplot(aes(riaageyr)) +
+  geom_histogram() + 
+  ggtitle("Age distribution in NYCHANES")
+```
+# To do
+
+Optional but recommended: Read up about chi square tests and t-tests
+- [T-tests]("https://toltex.imag.fr/TwoTestSPLS")
+- [Chi-Square]("https://www.westga.edu/academics/research/vrc/assets/docs/ChiSquareTest_LectureNotes.pdf") OR
+- [Khan academy]("https://www.khanacademy.org/math/ap-statistics/chi-square-tests/chi-square-tests-two-way-tables/e/conclusions-chi-square-tests-for-two-way-tables")
+
+
+```{r, fig.width = 2, fig.align='center'}
+knitr::include_graphics("/Users/saanchishah/Desktop/Spring_files/ghost.WebP")
+```
+

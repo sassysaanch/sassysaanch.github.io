@@ -1,0 +1,85 @@
+---
+title: "Lab 6"
+format: html
+editor: visual
+---
+
+# Statistical tests
+
+## Overview
+
+While I encourage you to run any test of your choosing, this lab is optional. We will also practice material learned so far to reinforce some of the This week, we'll learn how to perform chi-square tests. To do so, I am using Mike Love and Irizarry's book (recommended for life sciences). You can also visit Mike Love's github page to use the book online [here](%22https://github.com/genomicsclass/labs%22)
+
+*Loading libraries*
+
+```{r, message=FALSE}
+library(tidyverse)
+library(ggplot2)
+```
+
+*Loading the file* You need not worry about this chunk. You may simply run it. Or you could also download the mice dataset from the website and read in as a csv file for practice.
+
+```{r}
+dir <- "https://raw.githubusercontent.com/genomicsclass/dagdata/master/inst/extdata/"
+url <- paste0(dir, "femaleMiceWeights.csv")
+dat <- read.csv(url)
+```
+
+*Student exercise* 
+1. How many mice are in this dataset? </n>
+2. Calculate mean weight of the mice </n>
+3. Create a scatter plot (like the one I've already created) </n>
+4. What is the difference in mean weight by diet of the mice?
+
+```{r, echo=FALSE}
+# Q3
+
+dat %>% 
+  ggplot() +
+  geom_point(aes(x = Diet, y = Bodyweight))
+
+# Q4
+# Multiple ways to do this, ideal would be if else not covered in labs yet
+
+mean_wt_hf <- dat %>% 
+  filter(Diet == 'hf') %>% 
+  summarise(mean_wt_hf = mean(Bodyweight)) 
+
+mean_wt_chow <- dat %>% 
+  filter(Diet == 'chow') %>% 
+  summarise(mean_wt_chow = mean(Bodyweight))
+
+(mean_diff = mean_wt_hf - mean_wt_chow) # how do we know if this difference is meaningful or significant?
+
+```
+
+# Performing chi-square and t-tests.
+
+Let's understand the syntax for both these tests and use p-values to determine significance.
+
+```{r}
+# Perform a t-test for one categorical and one continuous var
+t.test(Bodyweight ~ Diet, data = dat)
+
+# Chi-square requires at least 30 observations, so not ideal in this case
+# Also, we do not have two categorical vars so we could recode the weight as high vs low
+print(mean(dat$Bodyweight))
+
+dat_new <- 
+  dat %>% 
+  mutate(new_weight = if_else(Bodyweight > 25.32375, 'High', 'Low'))
+
+test <- chisq.test(table(dat_new$Diet, dat_new$new_weight))
+test
+
+```
+
+**To Do**
+
+Nothing!!! This marks the end of our lab section - let's spend time practicing. 
+
+```{r, fig.align='center', echo=FALSE}
+
+knitr::include_graphics("/Users/saanchishah/Desktop/Spring_files/andy.jpeg")
+
+```

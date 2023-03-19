@@ -1,0 +1,177 @@
+---
+title: "Seminar HP Characters Exercise: Week 1 lab"
+author: "Saanchi Shah"
+date: "2023-03-06"
+output: html_document
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## _Getting started_
+
+## Installing and loading packages
+R packages contain code, data and documentation. Different packages have different roles to play. We will mostly use the dplyr and tidyverse packages for data wrangling and ggplot2 for visualisation. Let's learn how to install and load packages. Once you install a package in R, you only need not re-install it. However, each time you begin an R session without initializing an R project, you would have load the necessary packages.
+
+```{r, eval = FALSE}
+# install.packages("tidyverse")
+# install.packages("dplyr")
+# install.packages("readr")
+
+library(dplyr)
+library(tidyverse)
+library(readr) # to read in and write out csv files
+
+```
+
+
+## Learning about (absolute and relative) file paths
+It is essential to know what your working directory is. Next, we may have to change our current working directory so it is easier to access files.
+
+```{r}
+# To access the current working directory
+
+getwd()
+
+setwd("/Users/saanchishah/Desktop/Spring_files/Harry Potter")
+
+# To set the working directory where we want to house the files
+
+```
+
+## Assigning objects
+
+1. '<-' This is known as an assignment operator. R can save objects or dataframes.
+2. Other languages use the = sign to assign objects. 
+3. To do so, we need to assign the object to a name. For example, let's use R as a calculator and assign the output to an object
+
+```{r}
+a <- 5 + 2
+
+b <- 18499*40
+
+# Take a look at your environment
+
+a + b
+
+```
+
+## Types of objects in R
+Vectors, matrices and dataframes. Vectors can take in character or numeric object type data.
+Matrices can only contain numeric data. Dataframes can contain different types of data. 
+
+```{r}
+vec <- c(1, 2, 3, 4, 5) # c = concatenate
+
+# is the same as...
+
+vec1 <- c(1:5)
+
+```
+
+How can we create a character vector? Task: create a vector with 10 numbers of your choice and print the contents.
+
+
+## Reading in csv files
+For this class, we will mostly work with csv files. However, files you receive from a stakeholder, client etc. may not be in this format. R is able to read in different types of files such as an excel file, SAS or stata file and so on. I have taken the liberty of converting the data into csv files so that it's easier for you to work with the data.
+
+```{r}
+
+hp_characters <- read.csv("/Users/saanchishah/Desktop/Spring_files/Harry Potter/Characters.csv", sep = ";")
+
+
+# Notice how there is no ouput, we need to learn how to call it
+# This is a base r function - read.csv
+# Now that we have stored this data, we can run some stats on it 
+
+```
+How do you know this worked besides not getting an error? You can look at the global environment on the right hand side to confirm if you have the data. What if you would like to see what the first few rows look like without pointing and clicking?
+
+```{r}
+
+# Deliberately left blank
+
+```
+
+
+## Let's learn some other basic shortcuts
+You can press 'option key and - key' to insert the assignment operator
+You can highlight a line of code and press the command key + return key to just hit that line of code.
+
+## Types of variables
+It is always important to know what kind of variables you are working with in order to perform any function on it. For example, it may be difficult to perform an operation on a string variable. However,  it is possible to convert strings to numeric variables. But we're jumping the gun here. We need to understand the structure of the dataframe first!
+```{r}
+
+str(hp_characters)
+
+# How many rows and variables are does this dataset have?
+# What type of variables do you observe?
+
+```
+
+## **INTO THE HPVERSE**
+I do not take credit for creating these datasets regardless of how massive of a fan I am. I used [kaggle](https://www.kaggle.com/datasets/gulsahdemiryurek/harry-potter-dataset) to download the files we will be working with in class. I will always provide links and references so that you may be able to use the original source should you want to.
+
+
+What if we want to understand the type of a variable without having to look at the structure of the dataset?
+We would have to subset a variable first in order to do so.
+```{r}
+# subsetting a variable
+
+hp_characters$Name
+
+typeof(hp_characters$Name) # or
+class(hp_characters$Name) 
+
+# they are slightly different but we need not go into the differences in this class
+
+# You might expect "Name" to be character, we can test it
+is.character(hp_characters$Name) # Returns a logical
+
+```
+
+
+## Working with HP characters
+1. Let's look at the distribution of students by house
+2. How many wizards and witches does this dataset include?
+
+```{r}
+table(hp_characters$House)
+
+table(hp_characters$Gender)
+
+table(hp_characters$Blood.status)
+
+```
+
+
+## Subsetting observations in the HP characters dataframe
+
+Let's only look at witches/wizards who're in Gryffindor
+```{r}
+
+gryffindor <- hp_characters[hp_characters$House == "Gryffindor", ]
+# Notice how we have to use == when extracting by a value to return a logical
+# It means that house = gryffindor must be true 
+
+# df[df$var, ] - this format is specifying rows and columns both
+# all columns were chosen but we can choose specific columns like so
+
+gryffindor_new <- hp_characters[hp_characters$House == "Gryffindor", 
+                                c(1:4, 7, 9, 13)] 
+# We have created a new dataframe
+# Or could also use the filter function which is nicer - NEXT WEEK
+
+```
+
+## To do
+
+In preparation for the upcoming weeks, you will start reading up about the NYC Health and Nutrition Examination Survey data we will be working with for most of the quarter(subject to change). You can access documentation on the data structure, codebook and such [here](https://www.nyc.gov/site/doh/data/data-sets/new-york-city-health-and-nutrition-examination-survey-documentation.page). We will begin working with the SPI file next week. The week after we will likely use the CAPI files. If time permits, we will also the labs file. You will need about 30 minutes to understand how the data were collected, what each file represents and how the responses were coded. Without understanding the codebook, it is impossible to work with the data. **Note: We will be using the NYC HANES 2004 Data**.
+
+![**Where there is a wand, there is a way :D **](/Users/saanchishah/Desktop/Spring_files/Harry Potter/images.jpeg)
+
+Reference: (https://www.wizardingworld.com/features/what-does-your-wand-mean)
+

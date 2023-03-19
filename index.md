@@ -10,4 +10,4 @@
 6. [Lab 6 (html)](/Week7/lab6.html), [Qmd](/Week7/lab6.Qmd)
 
 ### Datasets for homework and final project
-1. [Homework datasets](/Data)
+1. [Homework datasets](/Data/)

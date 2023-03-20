@@ -1,0 +1,63 @@
+---
+title: "Practice2"
+author: 'Instructor: Saanchi Shah'
+date: "2023-03-20"
+output: html_document
+---
+
+# Overview:
+
+This practice set is modeled off the 2nd lab session. You can find the original dataset [here](https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data).
+
+Part 1.
+
+Load the required packages and read in the nyc airbnb file and assign it to 'nyc_airbnb'.
+
+```{r}
+library(tidyverse)
+library(dplyr)
+
+nyc_airbnb <- read.csv("/Users/saanchishah/Desktop/Spring_files/nycairbnb2019.csv")
+```
+
+
+Part 2.
+
+1. Select the following variables using 'pipes': id, name, price, minimum_nights, number_of_reviews, room_type, neighborhood_group, neighborhood. Assign this df to 'nyc_airbnb_subset'.
+
+```{r}
+nyc_airbnb_subset <- 
+  nyc_airbnb %>% 
+  select(id,
+         name,
+         price,
+         minimum_nights,
+         number_of_reviews,
+         room_type,
+         neighbourhood,
+         neighbourhood_group)
+
+```
+
+2. Filter nyc_airbnb_subset by the neighborhood_group 'Manhattan' using pipes again. Call this df 'manhattan'.
+
+```{r}
+manhattan <- 
+  nyc_airbnb_subset %>% 
+  filter(neighbourhood_group == "Manhattan")
+```
+
+3.1 Provide the mean price of an airbnb in Mahattan using the summarize function.
+3.2 How many airbnbs are in Manhattan?
+3.3 What is the maximum value of number_of_reviews? 
+3.4 What is the median number of minimum_nights spent at these airbnbs?
+
+```{r}
+# 3.1
+manhattan %>% 
+  summarize(mean_price = mean(manhattan$price),
+            max_reviews = max(number_of_reviews),
+            median_nights = median(minimum_nights))
+
+```
+

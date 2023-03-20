@@ -1,0 +1,57 @@
+---
+title: "Practice1"
+author: 'Instructor: Saanchi Shah'
+date: "2023-03-20"
+output: html_document
+---
+
+# This assignment is modeled off of the first lab. 
+
+Part 1.
+
+Load the tidyverse and dplyr packages.
+
+```{r}
+library(tidyverse)
+library(dplyr)
+```
+
+Read the file in. Remeber to specify the sep = ";" argument. You may assign the dataframe to 'potions'.
+
+```{r}
+potions <- read.csv("/Users/saanchishah/Desktop/Spring_files/Harry Potter/Potions.csv", sep = ";")
+```
+
+
+Part 2.
+
+1. Print the first 5 rows only.
+
+```{r}
+head(potions, n = 5)
+```
+
+2. How many observations and variables does this dataframe have?
+
+72 observations and 5 columns
+
+3. What are the types of variables in this dataset (use code)?
+
+```{r}
+str(potions) # provides attributes/labels as well
+
+# observing each var like so is okay 
+typeof(potions$Name)
+
+```
+
+4. How many beginner level potions exist in this dataset?
+(Hint: select all columns)
+```{r}
+potions[potions$Difficulty.level == "Beginner", ] 
+```
+5. Create a table using the difficulty level and note missing levels.
+```{r}
+table(potions$Difficulty.level)
+```
+

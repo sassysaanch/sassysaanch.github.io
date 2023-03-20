@@ -31,9 +31,21 @@ Data: Use your merged NYC HANES file or [here](/Data/merged_nyc.rds) is mine
 #### 6. Week 8: Statistical analysis (t-tests and chi squares)
 Lecture notes: [Lab 6 (html)](/Week7/lab6.html), [Qmd](/Week7/lab6.qmd)
 
+#### Week 9: Workshopping
 
-### Datasets for homework and final project
-TBD
+#### Week 10: Final project presentation
+
+### Practice sets
+
+#### Week 2
+To do after the first lab session in Week 2. Submit by the deadline before Week 3 class.
+
+Download: Practice set 1 [Rmd](/Week2/Practice1.Rmd)
+
+#### Week 3
+To do after the 2nd lab session in Week 3. Submit by the deadline before Week 4 class.
+
+Download: Practice set 2 [Rmd](/Week3/Practice2.Rmd)
 
 ## Helpful Resources including cheatsheets
 

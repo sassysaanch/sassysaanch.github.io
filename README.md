@@ -49,7 +49,7 @@ To do after the 2nd lab session in Week 3. Submit by the deadline before Week 4 
 
 Download: Practice set 2 [Rmd](/Week3/Practice2.Rmd)
 
-Data: NYC airbnb (/data/nycairbnb2019.csv) - you guessed it right, I love NYC!
+Data: [NYC airbnb](/Data/nycairbnb2019.csv) - you guessed it right, I love NYC!
 
 ## Helpful Resources including cheatsheets
 

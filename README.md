@@ -26,7 +26,7 @@ Data: [NYC HANES - SPI NYC](/Data/spi_nyc.csv) and [NYC HANES - CAPI NYC](/Data/
 #### 5. Week 6: GGplot (data visualization)
 Lecture notes: [Lab 5 (html)](/Week6/Lab5.html), [Rmd](/Week6/Lab5.Rmd)
 
-Data: Use your merged NYC HANES file or [here]((/Data/merged_nyc.rds) is mine
+Data: Use your merged NYC HANES file or [here](/Data/merged_nyc.rds) is mine
 
 #### 6. Week 8: Statistical analysis (t-tests and chi squares)
 Lecture notes: [Lab 6 (html)](/Week7/lab6.html), [Qmd](/Week7/lab6.qmd)

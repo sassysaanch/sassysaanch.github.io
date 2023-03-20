@@ -36,4 +36,4 @@ Lecture notes: [Lab 6 (html)](/Week7/lab6.html), [Qmd](/Week7/lab6.qmd)
 ### Datasets for homework and final project
 TBD
 
-theme: modernist
+

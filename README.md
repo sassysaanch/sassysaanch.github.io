@@ -42,10 +42,14 @@ To do after the first lab session in Week 2. Submit by the deadline before Week 
 
 Download: Practice set 1 [Rmd](/Week2/Practice1.Rmd)
 
+Data: Potions(/Data/Potions.csv)
+
 #### Week 3
 To do after the 2nd lab session in Week 3. Submit by the deadline before Week 4 class.
 
 Download: Practice set 2 [Rmd](/Week3/Practice2.Rmd)
+
+Data: NYC airbnb (/data/nycairbnb2019.csv) - you guessed it right, I love NYC!
 
 ## Helpful Resources including cheatsheets
 

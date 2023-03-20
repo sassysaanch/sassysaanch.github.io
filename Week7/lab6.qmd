@@ -80,6 +80,6 @@ Nothing!!! This marks the end of our lab section - let's spend time practicing.
 
 ```{r, fig.align='center', echo=FALSE}
 
-knitr::include_graphics("/Users/saanchishah/Desktop/Spring_files/andy.jpeg")
+knitr::include_graphics("/Users/saanchishah/Desktop/Spring_files/andy.JPEG")
 
 ```

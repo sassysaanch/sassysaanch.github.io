@@ -36,3 +36,7 @@ Lecture notes: [Lab 6 (html)](/Week7/lab6.html), [Qmd](/Week7/lab6.qmd)
 TBD
 
 ## Helpful Resources including cheatsheets
+
+[Rstudio Cheat Sheet: Data Wrangling](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
+
+[Rstudio Cheat Sheet: ggplot2](/Cheatsheets/data-visualisation.pdf)

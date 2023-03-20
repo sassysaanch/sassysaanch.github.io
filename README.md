@@ -40,14 +40,14 @@ Lecture notes: [Lab 6 (html)](/Week7/lab6.html), [Qmd](/Week7/lab6.qmd)
 #### Week 2
 To do after the first lab session in Week 2. Submit by the deadline before Week 3 class.
 
-Download: Practice set 1 [Rmd](/Week2/Practice1.Rmd)
+Download: Practice set 1[(Rmd)](/Week2/Practice1.Rmd)
 
 Data: [Potions](/Data/Potions.csv)
 
 #### Week 3
 To do after the 2nd lab session in Week 3. Submit by the deadline before Week 4 class.
 
-Download: Practice set 2 [Rmd](/Week3/Practice2.Rmd)
+Download: Practice set 2[(Rmd)](/Week3/Practice2.Rmd)
 
 Data: [NYC airbnb](/Data/nycairbnb2019.csv) - you guessed it right, I love NYC!
 

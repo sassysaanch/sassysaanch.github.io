@@ -10,12 +10,23 @@ output: html_document
 
 Today, we'll spend time learning how to set up R-studio (if you have not already) and navigate R script and R markdown. 
 
+Re-linking the installation guide [here](https://teacherscollege.screenstepslive.com/a/1135059-install-r-and-r-studio-for-mac)
+
+
 How to learn R?
-1. [YaRR](https://bookdown.org/ndphillips/YaRrr/the-four-rstudio-windows.html#files-plots-packages-help)
+(Re-linking resources here:)
+
+1. [YaRR](https://bookdown.org/ndphillips/YaRrr/the-four-rstudio-windows.html#files-plots-packages-help) 
+
 2. [Introduction to R (interactive tool)](https://app.datacamp.com/learn/courses/free-introduction-to-r)
+
 3. [Youtube tutorials](https://www.youtube.com/@marinstatlectures)
+
 4. [UCLA IDRE](https://stats.oarc.ucla.edu/stat/data/intro_r/intro_r_interactive_flat.html)
+
 5. [UCLA Poli Sci Methods Mavens Resources](https://methodsmavens-psucla.github.io/)
+
 6. [R for Data Science](https://r4ds.had.co.nz/)
 
 These are just a few resources to help you get started. That is the beauty of R, everyone uses R because it's free/open-source and there are a tonne of resources out there to help you along the way. I will keep mentioning resources as and when we develop some skills. It's up to you to decide how much you'd like to learn. I sincerely hope that you will attempt to follow along and perform the 'to do' tasks in addition to the practice sets.
+

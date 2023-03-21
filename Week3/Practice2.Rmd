@@ -1,5 +1,5 @@
 ---
-title: "Practice2"
+title: "Practice set #2"
 author: 'Instructor: Saanchi Shah'
 date: "2023-03-20"
 output: html_document
@@ -11,7 +11,9 @@ This practice set is modeled off the 2nd lab session. You can find the original 
 
 Part 1.
 
-Load the required packages and read in the nyc airbnb file and assign it to 'nyc_airbnb'.
+Load the required packages and read in the nyc airbnb file and assign it to 'nyc_airbnb'. 
+You do not need to use the sep = ''. argument at all because the default sep will suffice. Simply use the filepath to read the csv file in.
+
 
 ```{r}
 

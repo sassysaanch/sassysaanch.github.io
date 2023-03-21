@@ -1,5 +1,5 @@
 ---
-title: "Practice1"
+title: "Practice set #1"
 author: 'Instructor: Saanchi Shah'
 date: "2023-03-20"
 output: html_document

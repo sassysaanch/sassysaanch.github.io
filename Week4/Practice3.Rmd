@@ -1,0 +1,50 @@
+---
+title: "Practice Set #3"
+author: 'Instructor: Saanchi Shah'
+date: "2023-03-20"
+output: html_document
+---
+
+# Overview
+
+In this practice set, you will continue using the NYC airbnb dataset.
+
+Part 1.
+
+You know the drill now, load appropriate packages and read in the file and call the df 'nyc_airbnb'. 
+Once again, you do not need to use the df you subset in the last practice set so just read the file in again.  
+
+
+```{r}
+
+```
+
+Part 2.
+
+1. Rename the variables 'number_of_reviews' to 'reviews' and minimum_nights to 'nights' using pipes and re-assign it to nyc_airbnb. 
+
+```{r}
+
+```
+
+2. List the different variable types using code.
+```{r}
+
+```
+
+
+3. Use the 'summary' function on a character variable of your choice. Was the ouput helpful? If not, how can you fix this issue?
+
+```{r}
+
+```
+
+4. Let's practice using the same dataset to summarize across rows without creating multiple new datasets like we did in the previous practice set. One way of achieveing this is thorugh the use of 'group_by'. Let's group by 'neighborhood group' and use the summarize function to calculate the mean, median, standard deviation of the variable 'price'. You will inclue two other variables of your choice and include those in the same code line using pipes. Be mindful when you choose variables - which variables make sense vs not. No need to re-assign or assign this code to a new df. 
+**Report the values for each of these variables as you would in the results section of your abstract.**
+
+```{r}
+
+
+
+```
+

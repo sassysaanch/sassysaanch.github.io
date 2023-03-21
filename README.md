@@ -2,6 +2,14 @@
 
 ## Labs and datasets are housed on this page
 
+$${\color{red}
+Before \ attending\ Week\ 1\ class \\ 4.5.2023\\ MUST \ INSTALL\ R\ and\ R\ Studio
+}
+$$
+
+*Here is the [installation guide](https://teacherscollege.screenstepslive.com/a/1135059-install-r-and-r-studio-for-mac)*
+
+
 ### Lab files
 #### 1. Week 2: Introduction, reading files in, subsetting observations 
 Lecture notes: [Lab 1 (html)](/Week2/Week1.html), [Rmd](/Week2/Week1.Rmd)
@@ -53,6 +61,12 @@ Data: [NYC airbnb](/Data/nycairbnb2019.csv) - you guessed it right, I love NYC!
 
 ## Helpful Resources including cheatsheets
 
-[Rstudio Cheat Sheet: Data Wrangling](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
+- [Rstudio Cheat Sheet: Data Wrangling](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
 
-[Rstudio Cheat Sheet: ggplot2](/Cheatsheets/data-visualisation.pdf)
+- [Rstudio Cheat Sheet: ggplot2](/Cheatsheets/data-visualisation.pdf)
+
+- [R for Data Science](https://r4ds.had.co.nz/)
+
+- [Youtube tutorials](https://www.youtube.com/@marinstatlectures)
+
+

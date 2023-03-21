@@ -57,14 +57,21 @@ Homework assignment 1 (no coding required)
 #### Week 2
 To do after the first lab session in Week 2. Submit by the deadline before Week 3 class.
 
-Download: Practice set 1[(Rmd)](/Week2/Practice1.Rmd)
+Download: Practice set 1[(Rmd)](/Week2/Practice1.Rmd), [(html)](/Week2/Practice1.html)
 
 Data: [Potions](/Data/Potions.csv)
 
 #### Week 3
 To do after the 2nd lab session in Week 3. Submit by the deadline before Week 4 class.
 
-Download: Practice set 2[(Rmd)](/Week3/Practice2.Rmd)
+Download: Practice set 2[(Rmd)](/Week3/Practice2.Rmd),[(html)](/Week3/Practice2.html)
+
+Data: [NYC airbnb](/Data/nycairbnb2019.csv)
+
+#### Week 4
+To do after the 3nd lab session in Week 4. Submit by the deadline before Week 5 class.
+
+Download: Practice set 3[(Rmd)](/Week4/Practice3.Rmd),[(html)](/Week4/Practice3.html)
 
 Data: [NYC airbnb](/Data/nycairbnb2019.csv) - you guessed it right, I love NYC!
 

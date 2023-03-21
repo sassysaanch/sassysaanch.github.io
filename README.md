@@ -11,7 +11,7 @@ Zoom link: <https://ucla.zoom.us/j/4437962705>
 ## Labs and datasets are housed on this page
 
 
-### Before attending Week 1 class on 4.5.2023, you MUST INSTALL R and R Studio
+### Before attending Week 1 class on 4.5.2023, you MUST install R and R Studio
 *Here is the [INSTALLATION GUIDE](https://teacherscollege.screenstepslive.com/a/1135059-install-r-and-r-studio-for-mac).*
 
 ### Course Schedule
@@ -19,11 +19,11 @@ Zoom link: <https://ucla.zoom.us/j/4437962705>
 | Week | Topic | Lecture | Homework | Data |
 |:-----------|:------------|:------------|:------------|:------------|
 | 1 | R/R studio set up | Lecture notes: [Set up (html)](/Week1/Setup.html) | Homework assignment 1 (no coding required) | NA |
-| 2 | Introduction, reading files in, subsetting observations | Lecture notes: [Lab 1 (html)](/Week2/Week1.html), [Rmd](/Week2/Week1.Rmd) | Download Practice set 1[(Rmd)](/Week2/Practice1.Rmd), [(html)](/Week2/Practice1.html). Submit by the deadline before Week 3 class. | Class: [HP Characters](/Data/Characters.csv), Homework: [Potions](/Data/Potions.csv)|
-| 3 | Filtering and selecting variables and counting observations | [Lab 2 (html)](/Week3/Week2.html), [Rmd](/Week3/Week2.Rmd) | Download Practice set 2[(Rmd)](/Week3/Practice2.Rmd),[(html)](/Week3/Practice2.html). Submit by the deadline before Week 4 class. | Class: [NYC HANES - SPI NYC](/Data/spi_nyc.csv), Homework: [NYC airbnb](/Data/nycairbnb2019.csv) |
-| 4 | Grouping, summarizing and renaming variables | Lecture notes: [Lab 2 (html)](/Week3/Week2.html), [Rmd](/Week3/Week2.Rmd) | Download Practice set 3[(Rmd)](/Week4/Practice3.Rmd),[(html)](/Week4/Practice3.html). Submit by the deadline before Week 5 class. | Class: [NYC HANES - SPI NYC](/Data/spi_nyc.csv), Homework: [NYC airbnb](/Data/nycairbnb2019.csv) - you guessed it right, I love NYC! |
-| 5 | Merging datasets and creation of new variables | Lecture notes: [Lab 4 (html)](/Week5/Week4.html), [Rmd](/Week5/Week4.Rmd) | Download Practice Set 4 [(Rmd)](/Week5/Practice4.Rmd),[(html)](/Week5/Practice4.html). Submit by the deadline before Week 6 class. | Class: [NYC HANES - SPI NYC](/Data/spi_nyc.csv) and [NYC HANES - CAPI NYC](/Data/capi_nyc.csv), Homework: [Travel](/Data/travelnew.csv) |
-| 6 | GGplot (data visualization) | Lecture notes: [Lab 5 (html)](/Week6/Lab5.html), [Rmd](/Week6/Lab5.Rmd) | Practice Set 5 | Class: Use your merged NYC HANES file or [here](/Data/merged_nyc.rds) is mine |
+| 2 | Introduction, reading files in, subsetting observations | Lecture notes: [Lab 1 (html)](/Week2/Week1.html), [Rmd](/Week2/Week1.Rmd) | Download Practice set 1[(Rmd)](/Week2/Practice1.Rmd), [(html)](/Week2/Practice1.html). Submit by the deadline before Week 3 class. | **Class:** [HP Characters](/Data/Characters.csv) <br /> **Homework:** [Potions](/Data/Potions.csv)|
+| 3 | Filtering and selecting variables and counting observations | [Lab 2 (html)](/Week3/Week2.html), [Rmd](/Week3/Week2.Rmd) | Download Practice set 2[(Rmd)](/Week3/Practice2.Rmd),[(html)](/Week3/Practice2.html). Submit by the deadline before Week 4 class. | **Class:** [NYC HANES - SPI NYC](/Data/spi_nyc.csv) <br /> **Homework**: [NYC airbnb](/Data/nycairbnb2019.csv) |
+| 4 | Grouping, summarizing and renaming variables | Lecture notes: [Lab 2 (html)](/Week3/Week2.html), [Rmd](/Week3/Week2.Rmd) | Download Practice set 3[(Rmd)](/Week4/Practice3.Rmd),[(html)](/Week4/Practice3.html). Submit by the deadline before Week 5 class. | **Class:** [NYC HANES - SPI NYC](/Data/spi_nyc.csv)<br /> **Homework:** [NYC airbnb](/Data/nycairbnb2019.csv) - you guessed it right, I love NYC! |
+| 5 | Merging datasets and creation of new variables | Lecture notes: [Lab 4 (html)](/Week5/Week4.html), [Rmd](/Week5/Week4.Rmd) | Download Practice Set 4 [(Rmd)](/Week5/Practice4.Rmd),[(html)](/Week5/Practice4.html). Submit by the deadline before Week 6 class. | **Class:** [NYC HANES - SPI NYC](/Data/spi_nyc.csv) and [NYC HANES - CAPI NYC](/Data/capi_nyc.csv), <br /> **Homework:** [Travel](/Data/travelnew.csv) |
+| 6 | GGplot (data visualization) | Lecture notes: [Lab 5 (html)](/Week6/Lab5.html), [Rmd](/Week6/Lab5.Rmd) | Practice Set 5 | **Class:** Use your merged NYC HANES file or [here](/Data/merged_nyc.rds) is mine |
 | 7 | Statistical analysis (t-tests and chi squares) | Lecture notes: [Lab 6 (html)](/Week7/lab6.html), [Qmd](/Week7/lab6.qmd) | Practice Set 6 | NA |
 | 8 | In-class practice (recap) + TBD | TBD | Practice set 7 | TBD |
 | 9 | Workshopping | NA | NA |

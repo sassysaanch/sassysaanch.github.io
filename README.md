@@ -11,7 +11,7 @@ Zoom link: <https://ucla.zoom.us/j/4437962705>
 ## Labs and datasets are housed on this page
 
 
-### _Before attending Week 1 class on 4.5.2023, you MUST INSTALL R and R Studio_
+### Before attending Week 1 class on 4.5.2023, you MUST INSTALL R and R Studio
 *Here is the [INSTALLATION GUIDE](https://teacherscollege.screenstepslive.com/a/1135059-install-r-and-r-studio-for-mac).*
 
 ### Course Schedule

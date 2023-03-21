@@ -1,7 +1,4 @@
----
-layout: course
-title: Biotech Seminar Spring 2023: Health: Before, During and After Pregnancy
----
+# Biotech Seminar Spring 2023: Health: Before, During and After Pregnancy
 
 Slack Channel: <https://biotechw23-saanchi.com>
 

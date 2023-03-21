@@ -25,11 +25,7 @@ url <- paste0(dir, "femaleMiceWeights.csv")
 dat <- read.csv(url)
 ```
 
-*Student exercise* 
-1. How many mice are in this dataset? </n>
-2. Calculate mean weight of the mice </n>
-3. Create a scatter plot (like the one I've already created) </n>
-4. What is the difference in mean weight by diet of the mice?
+*Student exercise* 1. How many mice are in this dataset? </n> 2. Calculate mean weight of the mice </n> 3. Create a scatter plot (like the one I've already created) </n> 4. What is the difference in mean weight by diet of the mice?
 
 ```{r, echo=FALSE}
 # Q3
@@ -76,7 +72,7 @@ test
 
 **To Do**
 
-Nothing!!! This marks the end of our lab section - let's spend time practicing. 
+Nothing!!! This marks the end of our lab section - let's spend time practicing.
 
 ```{r, fig.align='center', echo=FALSE}
 

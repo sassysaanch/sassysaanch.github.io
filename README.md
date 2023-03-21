@@ -2,12 +2,9 @@
 
 ## Labs and datasets are housed on this page
 
-$${\color{red}
-Before \ attending\ Week\ 1\ class \\ 4.5.2023\\ MUST \ INSTALL\ R\ and\ R\ Studio
-}
-$$
 
-*Here is the [installation guide](https://teacherscollege.screenstepslive.com/a/1135059-install-r-and-r-studio-for-mac)*
+### _Before attending Week 1 class on 4.5.2023, you MUST INSTALL R and R Studio_
+*Here is the [INSTALLATION GUIDE](https://teacherscollege.screenstepslive.com/a/1135059-install-r-and-r-studio-for-mac).*
 
 
 ### Lab files

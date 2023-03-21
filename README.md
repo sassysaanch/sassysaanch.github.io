@@ -4,7 +4,9 @@ Slack Channel: <https://biotechw23-saanchi.com>
 
 Slack Channel Invite: <https://join.slack.com/t/biotechw23-saanchi/shared_invite/zt-1rj6fi11h-R~2Dr4b63Zc03qIHWuF32g>
 
-Zoom link: 
+Office Hours: After class, Monday 2 - 3 PM or by appointment
+
+Zoom link: https://ucla.zoom.us/j/4437962705
 
 ## Labs and datasets are housed on this page
 

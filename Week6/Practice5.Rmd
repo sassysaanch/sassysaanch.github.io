@@ -1,0 +1,66 @@
+---
+title: "Practice Set 5"
+author: 'Instructor: Saanchi Shah'
+date: "2023-03-22"
+output: html_document
+---
+
+
+## Overview
+
+This practice set is modeled off content covered thru lab 5. 
+
+Part 1.
+
+Load the required packages to complete the assignment. For the first part use the travelnew.csv dataset.
+
+```{r}
+
+```
+
+Create a scatterplot of accommodation plot against accommodation type. Before you do so, try to hypothesize the kind of trend you expect to see and why. A quick google search may help.
+Hint: call in the dataframe first and use pipes to make it easier.
+Please use the cheatsheet on the website and the documentation for data visualisation listed at the end of lab 4 [here](https://ggplot2.tidyverse.org).
+
+```{r}
+
+```
+
+Part 2
+
+Now read in the NC births dataset. 
+
+```{r}
+
+```
+
+1. Rename at least 3 variables
+2. Calculate the mean and standard deviation of the babies. 
+3. How many babies are premies and how many were low birth weight?
+4. Do you think mothers who smoked are more or less likely to have babies with low birth weight? [Hint: create a two by two table] Use assigned readings or external resources to back up your answer when you report the difference.
+
+```{r}
+
+
+```
+
+5. Likewise, what kind of an association did you expect between mothers' maturity and birth outcomes? Do the results align with your expectation?
+
+```{r}
+
+
+```
+
+6. How many mothers are white vs not? Generate a plot for racial group vs mage. Use the cheatsheet to decide the type of plot that would make most sense. 
+
+
+```{r}
+
+
+```
+
+7. Now create a plot for weight gained during pregnancy against race. Note: one is a categorical var and one is continuous. 
+
+```{r}
+
+```

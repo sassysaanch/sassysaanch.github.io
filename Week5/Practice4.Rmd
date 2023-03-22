@@ -32,3 +32,9 @@ Part 2.
 
 3. Create a new variable such that you can divide accommodation cost as 'costly' and 'cheap'. For example, you could choose a threshold of $1000 for the trip cost. Use the mutate function with if_else to do so. Read up the documentation on it if you can to do so. 
 
+4. Create a contingency table for gender and transportation type (cross-tab). Use the table function learned in lab 1 do so. Next, you can also calculate percentages for the same using the function 'prop.table'. Wrap table within the prop.table function to do so. Use the help function to learn more about how it can be used. 
+```{r}
+
+```
+
+

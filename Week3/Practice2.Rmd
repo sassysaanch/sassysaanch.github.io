@@ -29,7 +29,13 @@ Part 2.
 
 ```
 
-2. Filter nyc_airbnb_subset by the neighborhood_group 'Manhattan' using pipes again. Call this df 'manhattan'.
+2.1 Create a cross-tabulation/contingency table of neighborhood_group against accommodation type using the table function.
+
+```{r}
+
+```
+
+2.2 Filter nyc_airbnb_subset by the neighborhood_group 'Manhattan' using pipes again. Call this df 'manhattan'.
 
 ```{r}
 

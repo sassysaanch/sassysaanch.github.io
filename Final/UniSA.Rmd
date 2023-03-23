@@ -11,6 +11,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## De-identified dataset of the PALS (Pregnancy and Lifestyle Study), a community-based study of lifestyle on fertility and reproductive outcome.
 Thanks to University of South Australia, we have access to a wonderful resource. Please read up all the necessary information [here](https://data.unisa.edu.au/dap/Dataset.aspx?DatasetID=96137). 
+
+I am linking an article published using this dataset [here](https://reader.elsevier.com/reader/sd/pii/S0378378211002052?token=9DE306D5DEDAC0B88D4D4DEAFA9C032A6DC8D4B3FAE5956611B8F6542E99231F3D207E1BC7B258AF2141708C3E76C4D4&originRegion=us-east-1&originCreation=20230323191353) as well and for fun an article about the effects of [coffee](https://www.washingtonpost.com/wellness/2023/03/22/coffee-heart-palpitations-sleep-exercise/?utm_campaign=wp_main&utm_medium=social&utm_source=facebook&fbclid=IwAR0lfpzr7FZZ3tINwucbTT01OfSRZeRZCyzBLU2daqG1F7IC_7-d2y5qJs4).
+
 For your convenience, I have already converted the excel file to csv and is available for you to download and read in. Spend a lot of time with the codebook to decide the type of variables you may be interested in keeping in mind that your dependent variables must pregnancy outcome variables.I am also attaching the codebook for your perusal but I insist you use the website and bookmark it as you continue to work on this dataset.
 
 ```{r}

@@ -33,7 +33,7 @@ Zoom link: <https://ucla.zoom.us/j/4437962705>
 ## Final Project 
 
 ### 1. Instructions
-It's time to become a data scientist! Your goal is to work in a team to determine associations between environmental exposures/habits and pregnancy outcomes. Use this [markdown](/Final/UniSA.Rmd) file to get started on your final project - more details to come later. Feel free to spend time on this website in the meanwhile (highly encouraged): [UniSA](https://data.unisa.edu.au/dap/Dataset.aspx?DatasetID=96137)
+It's time to become an MCH researcher! Your goal is to work in a team to determine associations between environmental exposures/habits and pregnancy outcomes. Use this [markdown](/Final/UniSA.Rmd) file to get started on your final project - more details to come later. Feel free to spend time on this website in the meanwhile (highly encouraged): [UniSA](https://data.unisa.edu.au/dap/Dataset.aspx?DatasetID=96137). For copyright reasons, I have not shared articles on github, however, I did link a couple of articles in the markdown file which I believe will be helpful as we develop some skills and try to emulate 10% of what the authors achieved using the PALS dataset. 
 
 ### 2. Data
 Here is the [PALS](/Data/pals.csv) dataset in CSV format.

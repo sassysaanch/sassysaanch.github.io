@@ -51,7 +51,7 @@ Now read in the NC births dataset.
 
 ```
 
-6. How many mothers are white vs not? Generate a plot for racial group vs mage. Use the cheatsheet to decide the type of plot that would make most sense. 
+6. How many mothers are white vs not? Generate a plot for racial group vs mage. Use the cheatsheet to decide the type of plot that would make most sense(such as a boxplot) 
 
 
 ```{r}

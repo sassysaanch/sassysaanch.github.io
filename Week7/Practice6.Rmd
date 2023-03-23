@@ -1,0 +1,78 @@
+---
+title: "Practice Set 6"
+author: 'Instructor: Saanchi Shah'
+date: "2023-03-23"
+output: html_document
+---
+---
+title: "Practice Set 6"
+author: 'Instructor: Saanchi Shah'
+date: "2023-03-23"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Overview
+
+R has built in datasets which we can use to enhance our learning for example, here is the documentation for the cars dataset: <https://rstudio-pubs-static.s3.amazonaws.com/481654_883a4b47c9b244d4859dd1db235f0165.html>
+
+**Part 1**. I've aleady written out the code for the built-in chickweight dataset you need to use to answer the next question. You may add code for including packages you may want to load in the below chunk.
+
+```{r}
+
+# data("ChickWeight")
+# View(ChickWeight)
+```
+
+
+Q1. Using the variable 'weight', create a new variable reflecting different weight categories such as 'low', 'medium', 'high' (you can create your own version). Then refer to the documentation on t-tests and chi-squares and answer this question: Is there a statistical significant association between the diet and weight gain? Which test do you plan to use (and why)?
+
+```{r}
+# You may need the below code if you're trying to create more than two categories
+
+# check if _R_USE_PIPEBIND_ environment variable is set
+if (!"TRUE" %in% Sys.getenv("_R_USE_PIPEBIND_", unset = NA)) {
+  # set _R_USE_PIPEBIND_ environment variable
+  Sys.setenv("_R_USE_PIPEBIND_" = "TRUE")
+}
+
+
+
+```
+
+
+Q2. Plot chickweight against diet (not the new variable you created), however you wish to. Which diet type seems to be correlated with higher weight gain?
+
+```{r}
+
+```
+
+**Part 2.**
+
+Read in nc births from last week again. 
+
+```{r}
+
+```
+
+Q 1. One of the questions in the previous assignment was as follows: "4. Do you think mothers who smoked are more or less likely to have babies with low birth weight?" Now use a statistical test to determine if there is a significant association between weight and smoking status. Write a very brief interpretation for your findings - does it align with what you expected? You're a maternal and child health leader - what message would you spread to expecitng mothers or individuals interested in conceiving (are you able to make a recommendation?)?
+
+```{r}
+
+```
+
+Q 2. Is there an association between maternal age and term status? Hint: For a t-test outcome needs to be a quantitative variable. Select your varaibles accordinly (also test-dependent)
+
+```{r}
+
+```
+
+Q 3. It's always neat to be able to observe the distribution of continous variables to visually get a sense of the mean and range. Try hist(var_of_your_choice) - do this for at least 2 variables.
+```{r}
+
+```
+
+Q 4. Bonus question, generate any plot of your choice but it cannot be the same as the one you generated earlier in this exercise.

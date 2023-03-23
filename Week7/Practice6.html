@@ -11,9 +11,9 @@
 
 <meta name="author" content="Instructor: Saanchi Shah" />
 
-<meta name="date" content="2023-03-22" />
+<meta name="date" content="2023-03-23" />
 
-<title>Practice Set 5</title>
+<title>Practice Set 6</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -350,45 +350,57 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">Practice Set 5</h1>
+<h1 class="title toc-ignore">Practice Set 6</h1>
 <h4 class="author">Instructor: Saanchi Shah</h4>
-<h4 class="date">2023-03-22</h4>
+<h4 class="date">2023-03-23</h4>
 
 </div>
 
 
 <div id="overview" class="section level2">
 <h2>Overview</h2>
-<p>This practice set is modeled off content covered thru lab 5.</p>
-<p>Part 1.</p>
-<p>Load the required packages to complete the assignment. For the first
-part use the travelnew.csv dataset.</p>
-<p>Create a scatterplot of accommodation plot against accommodation
-type. Before you do so, try to hypothesize the kind of trend you expect
-to see and why. A quick google search may help. Hint: call in the
-dataframe first and use pipes to make it easier. Please use the
-cheatsheet on the website and the documentation for data visualisation
-listed at the end of lab 4 <a href="https://ggplot2.tidyverse.org">here</a>.</p>
-<p>Part 2</p>
-<p>Now read in the NC births dataset.</p>
-<ol style="list-style-type: decimal">
-<li><p>Rename at least 3 variables</p></li>
-<li><p>Calculate the mean and standard deviation of the babies.</p></li>
-<li><p>How many babies are premies and how many were low birth
-weight?</p></li>
-<li><p>Do you think mothers who smoked are more or less likely to have
-babies with low birth weight? [Hint: create a two by two table] Use
-assigned readings or external resources to back up your answer when you
-report the difference.</p></li>
-<li><p>Likewise, what kind of an association did you expect between
-mothers’ maturity and birth outcomes? Do the results align with your
-expectation?</p></li>
-<li><p>How many mothers are white vs not? Generate a plot for racial
-group vs mage. Use the cheatsheet to decide the type of plot that would
-make most sense(such as a boxplot)</p></li>
-<li><p>Now create a plot for weight gained during pregnancy against
-race. Note: one is a categorical var and one is continuous.</p></li>
-</ol>
+<p>R has built in datasets which we can use to enhance our learning for
+example, here is the documentation for the cars dataset: <a href="https://rstudio-pubs-static.s3.amazonaws.com/481654_883a4b47c9b244d4859dd1db235f0165.html" class="uri">https://rstudio-pubs-static.s3.amazonaws.com/481654_883a4b47c9b244d4859dd1db235f0165.html</a></p>
+<p><strong>Part 1</strong>. I’ve aleady written out the code for the
+built-in chickweight dataset you need to use to answer the next
+question. You may add code for including packages you may want to load
+in the below chunk.</p>
+<pre class="r"><code># data(&quot;ChickWeight&quot;)
+# View(ChickWeight)</code></pre>
+<p>Q1. Using the variable ‘weight’, create a new variable reflecting
+different weight categories such as ‘low’, ‘medium’, ‘high’ (you can
+create your own version). Then refer to the documentation on t-tests and
+chi-squares and answer this question: Is there a statistical significant
+association between the diet and weight gain? Which test do you plan to
+use (and why)?</p>
+<pre class="r"><code># You may need the below code if you&#39;re trying to create more than two categories
+
+# check if _R_USE_PIPEBIND_ environment variable is set
+if (!&quot;TRUE&quot; %in% Sys.getenv(&quot;_R_USE_PIPEBIND_&quot;, unset = NA)) {
+  # set _R_USE_PIPEBIND_ environment variable
+  Sys.setenv(&quot;_R_USE_PIPEBIND_&quot; = &quot;TRUE&quot;)
+}</code></pre>
+<p>Q2. Plot chickweight against diet (not the new variable you created),
+however you wish to. Which diet type seems to be correlated with higher
+weight gain?</p>
+<p><strong>Part 2.</strong></p>
+<p>Read in nc births from last week again.</p>
+<p>Q 1. One of the questions in the previous assignment was as follows:
+“4. Do you think mothers who smoked are more or less likely to have
+babies with low birth weight?” Now use a statistical test to determine
+if there is a significant association between weight and smoking status.
+Write a very brief interpretation for your findings - does it align with
+what you expected? You’re a maternal and child health leader - what
+message would you spread to expecitng mothers or individuals interested
+in conceiving (are you able to make a recommendation?)?</p>
+<p>Q 2. Is there an association between maternal age and term status?
+Hint: For a t-test outcome needs to be a quantitative variable. Select
+your varaibles accordinly (also test-dependent)</p>
+<p>Q 3. It’s always neat to be able to observe the distribution of
+continous variables to visually get a sense of the mean and range. Try
+hist(var_of_your_choice) - do this for at least 2 variables.</p>
+<p>Q 4. Bonus question, generate any plot of your choice but it cannot
+be the same as the one you generated earlier in this exercise.</p>
 </div>
 
 

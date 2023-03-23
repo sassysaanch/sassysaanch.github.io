@@ -1,0 +1,21 @@
+---
+title: "uniSA "
+author: 'Instructor: Saanchi Shah'
+date: "2023-03-23"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## De-identified dataset of the PALS (Pregnancy and Lifestyle Study), a community-based study of lifestyle on fertility and reproductive outcome.
+Thanks to University of South Australia, we have access to a wonderful resource. Please read up all the necessary information [here](https://data.unisa.edu.au/dap/Dataset.aspx?DatasetID=96137). 
+For your convenience, I have already converted the excel file to csv and is available for you to download and read in. Spend a lot of time with the codebook to decide the type of variables you may be interested in keeping in mind that your dependent variables must pregnancy outcome variables.I am also attaching the codebook for your perusal but I insist you use the website and bookmark it as you continue to work on this dataset.
+
+```{r}
+
+# pals <-  read.csv()
+
+```
+

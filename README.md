@@ -25,7 +25,7 @@ Zoom link: <https://ucla.zoom.us/j/4437962705>
 | 5 | Merging datasets and creation of new variables | Lecture notes: [Lab 4 (html)](/Week5/Week4.html), [Rmd](/Week5/Week4.Rmd) | Download Practice Set 4 [(Rmd)](/Week5/Practice4.Rmd),[(html)](/Week5/Practice4.html). Submit by the deadline before Week 6 class. | **Class:** [NYC HANES - SPI NYC](/Data/spi_nyc.csv) and [NYC HANES - CAPI NYC](/Data/capi_nyc.csv), <br /> **Homework:** [Travel](/Data/travelnew.csv) |
 | 6 | GGplot (data visualization) | Lecture notes: [Lab 5 (html)](/Week6/Lab5.html), [Rmd](/Week6/Lab5.Rmd) | Download Practice Set 5 [(Rmd)](/Week6/Practice5.Rmd),[(html)](/Week6/Practice5.html). Submit by the deadline before Week 7 class.| **Class:** Use your merged NYC HANES file or [here](/Data/merged_nyc.rds) is mine. <br /> **Homework:** [Travel](/Data/travelnew.csv) and [NC Births](/Data/ncbirths.csv)|
 | 7 | Statistical analysis (t-tests and chi squares) | Lecture notes: [Lab 6 (html)](/Week7/lab6.html), [Qmd](/Week7/lab6.qmd) | Download Practice Set 6 [(Rmd)](/Week7/Practice6.Rmd),[(html)](/Week7/Practice6.html). Submit by the deadline before Week 8 class.| NA |
-| 8 | In-class practice (recap) + TBD | TBD | Practice set 7 | TBD |
+| 8 | In-class practice (recap) + TBD | TBD | Rough Draft Due | TBD |
 | 9 | Workshopping | NA | NA |
 | 10 | Final Project Presentation | NA | NA |
 
@@ -33,8 +33,11 @@ Zoom link: <https://ucla.zoom.us/j/4437962705>
 ## Final Project 
 
 ### 1. Instructions
+It's time to become a data scientist! Your goal is to work in a team to determine associations between environmental exposures/habits and pregnancy outcomes. Use this [markdown](/Final/UniSA.Rmd) file to get started on your final project - more details to come later. 
 
 ### 2. Data
+Here is the [PALS](/Data/pals.csv) dataset in CSV format.
+Here is the [codebook](/Data/palscodebook.pdf). 
 
 ## Helpful Resources including cheatsheets
 

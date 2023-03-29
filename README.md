@@ -1,5 +1,7 @@
 # Biotech Seminar Spring 2023: Health: Before, During and After Pregnancy
 
+Instructor: Saanchi Shah
+
 Slack Channel: <https://biotechw23-saanchi.com>
 
 Slack Channel Invite: <https://join.slack.com/t/biotechw23-saanchi/shared_invite/zt-1rj6fi11h-R~2Dr4b63Zc03qIHWuF32g>

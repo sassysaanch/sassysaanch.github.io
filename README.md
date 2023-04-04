@@ -8,7 +8,7 @@ Slack Channel Invite: <https://join.slack.com/t/biotechw23-saanchi/shared_invite
 
 Class: W 3:00 PM - 05:50 PM Covel 210
 
-Office Hours: After class, Monday 2 - 3 PM or by appointment
+Office Hours: After class, Monday 2 - 3 PM @ Anderson courtyard or by appointment
 
 Zoom link: <https://ucla.zoom.us/j/4437962705>
 

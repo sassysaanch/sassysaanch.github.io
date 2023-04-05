@@ -30,3 +30,8 @@ How to learn R?
 
 These are just a few resources to help you get started. That is the beauty of R, everyone uses R because it's free/open-source and there are a tonne of resources out there to help you along the way. I will keep mentioning resources as and when we develop some skills. It's up to you to decide how much you'd like to learn. I sincerely hope that you will attempt to follow along and perform the 'to do' tasks in addition to the practice sets.
 
+# Practice
+
+I highly recommend that you spend some time on datacamp. You can create a free account and it's an interactive and farily intuitive tool to use when you're just beginning to use R. I recommend testing out the 'Introduction to R' course [here](https://campus.datacamp.com/courses/free-introduction-to-r/chapter-1-intro-to-basics-1?ex=1).
+
+

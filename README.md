@@ -46,11 +46,13 @@ Here is a document listing the variables I kept in the [subset dataset](/Data/pa
 
 My suggestion is to approach the paper/analysis in one of the 2 ways:
 1. Association between dietary variables and birth weight
+
 2. Association between term status and maternal health
 
 ### 3. Past projects using different data sources
-a) Vitamin A Supplementation and Low Birth Weight’s Relationship with Declining Under Five Mortality Rate in Africa from 2000-2015. Feel free to take a look [here](/Final/SampleStudentWHOProject.pdf)
-b) Methicillin-Resistant Staphylococcus Aureus (MRSA) Infections in California Across Community Type and Years. Feel free to take a look [here](/Final/SampleStudentCommunityProject.pdf)
+a) Vitamin A Supplementation and Low Birth Weight’s Relationship with Declining Under Five Mortality Rate in Africa from 2000-2015. Feel free to take a look [here](/Final/SampleStudentWHOProject.pdf).
+
+b) Methicillin-Resistant Staphylococcus Aureus (MRSA) Infections in California Across Community Type and Years. Feel free to take a look [here](/Final/SampleStudentCommunityProject.pdf).
 
 Note: They did NOT use PALS. If you wish to use a different dataset or the WHO data most students have worked with in the past, let me know! Further, expectations for the paper were a little different and we used a different programming language in the past. Do not worry about all the graphs (some students were also very advanced and I had to modify some of the assignments accordingly).
 

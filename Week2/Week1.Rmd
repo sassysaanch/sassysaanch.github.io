@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ## _Getting started_
 
 ## Installing and loading packages
-R packages contain code, data and documentation. Different packages have different roles to play. We will mostly use the dplyr and tidyverse packages for data wrangling and ggplot2 for visualisation. Let's learn how to install and load packages. Once you install a package in R, you only need not re-install it. However, each time you begin an R session without initializing an R project, you would have load the necessary packages.
+R packages contain code, data and documentation. Different packages have different roles to play. We will mostly use the dplyr and tidyverse packages for data wrangling and ggplot2 for visualisation. Let's learn how to install and load packages. Once you install a package in R, you need not re-install it. However, each time you begin an R session without initializing an R project, you would have to load the necessary packages.
 
 ```{r, eval = FALSE}
 # install.packages("tidyverse")
@@ -169,7 +169,7 @@ gryffindor_new <- hp_characters[hp_characters$House == "Gryffindor",
 
 ## To do
 
-In preparation for the upcoming weeks, you will start reading up about the NYC Health and Nutrition Examination Survey data we will be working with for most of the quarter(subject to change). You can access documentation on the data structure, codebook and such [here](https://www.nyc.gov/site/doh/data/data-sets/new-york-city-health-and-nutrition-examination-survey-documentation.page). We will begin working with the SPI file next week. The week after we will likely use the CAPI files. If time permits, we will also the labs file. You will need about 30 minutes to understand how the data were collected, what each file represents and how the responses were coded. Without understanding the codebook, it is impossible to work with the data. **Note: We will be using the NYC HANES 2004 Data**.
+In preparation for the upcoming weeks, you will start reading up about the NYC Health and Nutrition Examination Survey data we will be working with for most of the quarter(subject to change). You can access documentation on the data structure, codebook and such [here](https://www.nyc.gov/site/doh/data/data-sets/new-york-city-health-and-nutrition-examination-survey-documentation.page). We will begin working with the SPI file next week. The week after we will likely use the CAPI files. If time permits, we will also use the labs file. You will need about 30 minutes to understand how the data were collected, what each file represents and how the responses were coded. Without understanding the codebook, it is impossible to work with the data. **Note: We will be using the NYC HANES 2004 Data**.
 
 ![**Where there is a wand, there is a way :D **](/Users/saanchishah/Desktop/Spring_files/Harry Potter/images.jpeg)
 

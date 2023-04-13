@@ -22,7 +22,7 @@ Zoom link: <https://ucla.zoom.us/j/4437962705>
 
 | Week | Topic | Lecture | Homework | Data |
 |:-----------|:------------|:------------|:------------|:------------|
-| 1 | R/R studio set up | Lecture notes: [Set up (html)](/Week1/Setup.html) | Homework assignment 1 (no coding required) | NA |
+| 1 | R/R studio set up | Lecture notes: [Set up (html)](/Week1/Setup.html) | NA | NA |
 | 2 | Introduction, reading files in, subsetting observations | Lecture notes: [Lab 1 (html)](/Week2/Week1.html), [Rmd](/Week2/Week1.Rmd) | Download Practice set 1[(Rmd)](/Week2/Practice1.Rmd), [(html)](/Week2/Practice1.html). Submit by the deadline before Week 3 class. | **Class:** [HP Characters](/Data/Characters.csv) <br /> **Homework:** [Potions](/Data/Potions.csv)|
 | 3 | Filtering and selecting variables and counting observations | [Lab 2 (html)](/Week3/Week2.html), [Rmd](/Week3/Week2.Rmd) | Download Practice set 2[(Rmd)](/Week3/Practice2.Rmd),[(html)](/Week3/Practice2.html). Submit by the deadline before Week 4 class. | **Class:** [NYC HANES - SPI NYC](/Data/spi_nyc.csv) <br /> **Homework**: [NYC airbnb](/Data/nycairbnb2019.csv) |
 | 4 | Grouping, summarizing and renaming variables | Lecture notes: [Lab 2 (html)](/Week3/Week2.html), [Rmd](/Week3/Week2.Rmd) | Download Practice set 3[(Rmd)](/Week4/Practice3.Rmd),[(html)](/Week4/Practice3.html). Submit by the deadline before Week 5 class. | **Class:** [NYC HANES - SPI NYC](/Data/spi_nyc.csv)<br /> **Homework:** [NYC airbnb](/Data/nycairbnb2019.csv) - you guessed it right, I love NYC! |

@@ -42,7 +42,7 @@ It's time to become an MCH researcher! Your goal is to work in a team to determi
 ### 2. Data
 Here is the [PALS](/Data/pals.csv) dataset in CSV format. Since this is the original dataset, it has all the variables as is (which is a lot). To make your life easier, I created a subset with a few variables and a few new variables. Should you want to use it as is, here you go: [PALS SUBSET](/Data/pals_subset.csv).
 Here is the [codebook](/Data/palscodebook.pdf) for the original dataset which can also be found online.
-Here is a document listing the variables I kept in the [subset dataset](/Data/pals_subset_vars.docx).
+Here is a document listing the variables I kept in the [subset dataset](/Data/pals_subset_var.docx).
 
 My suggestion is to approach the paper/analysis in one of the 2 ways:
 1. Association between dietary variables and birth weight

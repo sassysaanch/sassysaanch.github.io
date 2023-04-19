@@ -7,7 +7,7 @@ output: html_document
 
 # Overview:
 
-This practice set is modeled off the 2nd lab session. You can find the original dataset [here](https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data).
+This practice set is modeled off of the 2nd lab session. You can find the original dataset [here](https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data).
 
 Part 1.
 

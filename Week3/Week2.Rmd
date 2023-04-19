@@ -21,7 +21,7 @@ library(tidyverse)
 
 ## Overview
 
-Last week, we performed some basic operations to read in the HP characters file as selecting for witches/wizards based on their House and then we created a new smaller dataset. This week, we will start reading in files from the official website for the City of New York. Specifically, we will work with the NYC Health and Nutrition Examination Survey files which can be found [here](https://www.nyc.gov/site/doh/data/data-sets/new-york-city-health-and-nutrition-examination-survey-documentation.page). I will take stock of how we're doing and may have to make changes to our workflow. However, I would still like you to learn how to 'merge' files which is extremely useful for data scientists. You 'may' NOT have to merge for your final project but at least you will be equipped with this knowledge. For the next few weeks, we will use this data to keep learning more about coding and for you to be able to apply these skills to your homework and your final project. Please take some time to get familiarized with the data.
+Last week, we performed some basic operations to read in the HP characters file as selecting for witches/wizards based on their House and then we created a new smaller dataset. This week, we will start reading in files from the official website for the City of New York. Specifically, we will work with the NYC Health and Nutrition Examination Survey files which can be found [here](https://www.nyc.gov/site/doh/data/data-sets/new-york-city-health-and-nutrition-examination-survey-documentation.page). I will take stock of how we're doing and may have to make changes to our workflow. You won't have to merge datasets for your final project but at least you will be equipped with this knowledge. For the next few weeks, we will use this data to keep learning more about coding and for you to be able to apply these skills to your homework and your final project. Please take some time to get familiarized with the data.
 
 By the end of this course, my hope is that you will have learned to work with different types of data through your assignments and the project in the realm of MCH. 
 
@@ -39,6 +39,8 @@ spi_nyc <- read.csv("/Users/saanchishah/Desktop/Spring_files/NYC/spi_nyc.csv")
 ## Selecting variables
 
 Next, we want to select for certain variables. We learned one way to do so last week. However, there is an easier way. We can use the function "select()" to achieve that! Look up the documentation for selecting variables. 
+
+This chunk is simply to demonstrate that we can use better functions to achieve the same result and you will likely not have to use any of these base R functions again.
 
 ```{r}
 
@@ -112,7 +114,22 @@ spi_nyc %>%
   select(riaageyr) %>%
   summary() # This is me being lazy
  
-# What if you want the mean only? or the median? or the standard deviation? 
+# What if you only want the mean? or the median? or the standard deviation? 
+
+mean(spi_nyc$riaageyr)
+sd(spi_nyc$riaageyr)
+median(spi_nyc$riaageyr)
+min(spi_nyc$riaageyr)
+max(spi_nyc$riaageyr)
+
+```
+
+
+Alternative way:
+Using summarize can be slightly difficult when you're new to R but can perform tasks efficiently.
+
+```{r}
+
 
 spi_nyc %>% 
   select(riaageyr) %>%

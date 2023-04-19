@@ -371,13 +371,11 @@ reading in files from the official website for the City of New York.
 Specifically, we will work with the NYC Health and Nutrition Examination
 Survey files which can be found <a href="https://www.nyc.gov/site/doh/data/data-sets/new-york-city-health-and-nutrition-examination-survey-documentation.page">here</a>.
 I will take stock of how we’re doing and may have to make changes to our
-workflow. However, I would still like you to learn how to ‘merge’ files
-which is extremely useful for data scientists. You ‘may’ NOT have to
-merge for your final project but at least you will be equipped with this
-knowledge. For the next few weeks, we will use this data to keep
-learning more about coding and for you to be able to apply these skills
-to your homework and your final project. Please take some time to get
-familiarized with the data.</p>
+workflow. You won’t have to merge datasets for your final project but at
+least you will be equipped with this knowledge. For the next few weeks,
+we will use this data to keep learning more about coding and for you to
+be able to apply these skills to your homework and your final project.
+Please take some time to get familiarized with the data.</p>
 <p>By the end of this course, my hope is that you will have learned to
 work with different types of data through your assignments and the
 project in the realm of MCH.</p>
@@ -395,6 +393,9 @@ read in the SPfile.</p>
 do so last week. However, there is an easier way. We can use the
 function “select()” to achieve that! Look up the documentation for
 selecting variables.</p>
+<p>This chunk is simply to demonstrate that we can use better functions
+to achieve the same result and you will likely not have to use any of
+these base R functions again.</p>
 <pre class="r"><code># Recall variable selection from the last lecture
 spi_nyc_race &lt;- spi_nyc$race_eth
 
@@ -457,9 +458,21 @@ pipes</p>
 ##  Mean   :42.18  
 ##  3rd Qu.:52.00  
 ##  Max.   :89.00</code></pre>
-<pre class="r"><code># What if you want the mean only? or the median? or the standard deviation? 
+<pre class="r"><code># What if you only want the mean? or the median? or the standard deviation? 
 
-spi_nyc %&gt;% 
+mean(spi_nyc$riaageyr)</code></pre>
+<pre><code>## [1] 42.17659</code></pre>
+<pre class="r"><code>sd(spi_nyc$riaageyr)</code></pre>
+<pre><code>## [1] 15.40723</code></pre>
+<pre class="r"><code>median(spi_nyc$riaageyr)</code></pre>
+<pre><code>## [1] 40</code></pre>
+<pre class="r"><code>min(spi_nyc$riaageyr)</code></pre>
+<pre><code>## [1] 20</code></pre>
+<pre class="r"><code>max(spi_nyc$riaageyr)</code></pre>
+<pre><code>## [1] 89</code></pre>
+<p>Alternative way: Using summarize can be slightly difficult when
+you’re new to R but can perform tasks efficiently.</p>
+<pre class="r"><code>spi_nyc %&gt;% 
   select(riaageyr) %&gt;%
   summarize(mean_age = mean(riaageyr, na.rm = TRUE))</code></pre>
 <pre><code>##   mean_age

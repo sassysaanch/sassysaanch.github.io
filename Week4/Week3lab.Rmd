@@ -30,6 +30,7 @@ library(dplyr)
 ## Tally function
 
 Recall from last lab how we used different functions to summarize **numeric** variables. What if we want to achieve the same for character variables without recoding variables (more on recoding later)?
+
 ```{r}
 
 summary(spi_nyc$DMQ111e) # Is this helpful?
@@ -59,8 +60,9 @@ Let's look at the syntax for renaming variables now.
 
 ```{r}
 spi_nyc %>% 
-  rename('Country' = "DMQ111e",
-                   'State' = "DMQ130e") %>% 
+  rename(Country = DMQ111e,
+                   State = DMQ130e) 
+%>% 
   head(n = 5)
 
 # rename(new_var = old_var)

@@ -60,7 +60,7 @@ Note: They did NOT use PALS. If you wish to use a different dataset or the WHO d
 
 - [Rstudio Cheat Sheet: Data Wrangling](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
 
-- [Rstudio Cheat Sheet: ggplot2](/Cheatsheets/data-visualisation.pdf)
+- [Rstudio Cheat Sheet: ggplot2](/Cheatsheets/data-visualization.pdf)
 
 - [R for Data Science](https://r4ds.had.co.nz/)
 

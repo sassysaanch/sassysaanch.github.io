@@ -18,7 +18,7 @@ Load the required packages to complete the assignment. For the first part use th
 
 ```
 
-Create a scatterplot of accommodation plot against accommodation type. Before you do so, try to hypothesize the kind of trend you expect to see and why. A quick google search may help.
+Create a scatterplot of accommodation cost against accommodation type. Before you do so, try to hypothesize the kind of trend you expect to see and why. A quick google search may help.
 Hint: call in the dataframe first and use pipes to make it easier.
 Please use the cheatsheet on the website and the documentation for data visualisation listed at the end of lab 4 [here](https://ggplot2.tidyverse.org).
 

@@ -34,25 +34,26 @@ There are a myriad of ways to plot the data. I will show you a couple of example
 ```{r}
 merged_nyc_subset %>% 
   ggplot(mapping = aes(x = race_eth, y = riaageyr)) +
-  geom_jitter()
+  geom_jitter() 
 ```
-You can use geom_point() for continuous variable. There are options for histogram, boxplots etc. but you don't have to do use any of those if this is giving you a headache. Of course, I can help you plot if you really want to learn how to go about it. Please use the cheat sheet as it's useful to understand what kind of plot to use for plotting different types of X and Y variables. However, to keep it simple, we can simply focus on learning how to create a scatter plot, which means 1) one of your variables must be continuous and one must be categorical or 2) both the vars must be continuous. 
+You can use geom_point() for a continuous variable. There are options for histogram, boxplots etc. but you don't have to do use any of those if this is giving you a headache. Of course, I can help you plot if you really want to learn how to go about it. Please use the cheat sheet as it's useful to understand what kind of plot to use for plotting different types of X and Y variables. However, to keep it simple, we can simply focus on learning how to create a scatter plot, which means 1) one of your variables must be continuous and one must be categorical or 2) both the vars must be continuous. 
 
 ```{r, message=FALSE}
 merged_nyc_subset %>% 
- ggplot(aes(riaageyr)) +
+ ggplot(mapping = aes(riaageyr)) +
   geom_histogram() + 
   ggtitle("Age distribution in NYCHANES")
 ```
 # To do
 
 Optional but recommended: Read up about chi square tests and t-tests
-- [T-tests]("https://toltex.imag.fr/TwoTestSPLS")
-- [Chi-Square]("https://www.westga.edu/academics/research/vrc/assets/docs/ChiSquareTest_LectureNotes.pdf") OR
-- [Khan academy]("https://www.khanacademy.org/math/ap-statistics/chi-square-tests/chi-square-tests-two-way-tables/e/conclusions-chi-square-tests-for-two-way-tables")
+- [T-tests](https://toltex.imag.fr/TwoTestSPLS)
+- [Chi-Square](https://www.westga.edu/academics/research/vrc/assets/docs/ChiSquareTest_LectureNotes.pdf) OR
+- [Khan academy](https://www.khanacademy.org/math/ap-statistics/chi-square-tests/chi-square-tests-two-way-tables/e/conclusions-chi-square-tests-for-two-way-tables)
 
 
 ```{r, fig.width = 2, fig.align='center'}
 knitr::include_graphics("/Users/saanchishah/Desktop/Spring_files/ghost.WebP")
 ```
+
 

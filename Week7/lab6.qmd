@@ -8,7 +8,13 @@ editor: visual
 
 ## Overview
 
-While I encourage you to run any test of your choosing, this lab is optional. We will also practice material learned so far to reinforce some of the This week, we'll learn how to perform chi-square tests. To do so, I am using Mike Love and Irizarry's book (recommended for life sciences). You can also visit Mike Love's github page to use the book online [here](%22https://github.com/genomicsclass/labs%22)
+While I encourage you to run any test of your choosing, you'll likely end up using FIsher's exact/chi-squared test.
+
+1.  Chi-squares: <https://www.westga.edu/academics/research/vrc/assets/docs/ChiSquareTest_LectureNotes.pdf>[/](https://www.westga.edu/academics/research/vrc/assets/docs/ChiSquareTest_LectureNotes.pdf/)
+2.  T-test: <https://toltex.imag.fr/TwoTestSPLS>/
+3.  Fisher's exact: <https://www.biostat.jhsph.edu/~iruczins/teaching/140.652/supp21.pdf>[/](https://www.biostat.jhsph.edu/~iruczins/teaching/140.652/supp21.pdf/)
+
+We will also practice material learned so far to reinforce some of the code learned so far. This week, we'll learn how to perform chi-square tests. To do so, I am using Mike Love and Irizarry's book (recommended for life sciences). You can also visit Mike Love's github page to use the book online [here](%22https://github.com/genomicsclass/labs%22).
 
 *Loading libraries*
 
@@ -17,7 +23,7 @@ library(tidyverse)
 library(ggplot2)
 ```
 
-*Loading the file* You need not worry about this chunk. You may simply run it. Or you could also download the mice dataset from the website and read in as a csv file for practice.
+*Loading the file:* You need not worry about this chunk. You may simply run it. Or you could also download the mice dataset from the website and read in as a csv file for practice.
 
 ```{r}
 dir <- "https://raw.githubusercontent.com/genomicsclass/dagdata/master/inst/extdata/"
@@ -49,7 +55,7 @@ mean_wt_chow <- dat %>%
 
 ```
 
-# Performing chi-square and t-tests.
+# Performing chi-squares and t-tests.
 
 Let's understand the syntax for both these tests and use p-values to determine significance.
 
@@ -73,9 +79,3 @@ test
 **To Do**
 
 Nothing!!! This marks the end of our lab section - let's spend time practicing.
-
-```{r, fig.align='center', echo=FALSE}
-
-knitr::include_graphics("/Users/saanchishah/Desktop/Spring_files/andy.JPEG")
-
-```

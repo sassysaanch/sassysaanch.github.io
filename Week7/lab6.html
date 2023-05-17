@@ -127,13 +127,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1>Statistical tests</h1>
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>While I encourage you to run any test of your choosing, this lab is optional. We will also practice material learned so far to reinforce some of the This week, we’ll learn how to perform chi-square tests. To do so, I am using Mike Love and Irizarry’s book (recommended for life sciences). You can also visit Mike Love’s github page to use the book online <a href="%22https://github.com/genomicsclass/labs%22">here</a></p>
+<p>While I encourage you to run any test of your choosing, you’ll likely end up using FIsher’s exact/chi-squared test.</p>
+<ol type="1">
+<li>Chi-squares: <a href="https://www.westga.edu/academics/research/vrc/assets/docs/ChiSquareTest_LectureNotes.pdf" class="uri">https://www.westga.edu/academics/research/vrc/assets/docs/ChiSquareTest_LectureNotes.pdf</a><a href="https://www.westga.edu/academics/research/vrc/assets/docs/ChiSquareTest_LectureNotes.pdf/">/</a></li>
+<li>T-test: <a href="https://toltex.imag.fr/TwoTestSPLS" class="uri">https://toltex.imag.fr/TwoTestSPLS</a>/</li>
+<li>Fisher’s exact: <a href="https://www.biostat.jhsph.edu/~iruczins/teaching/140.652/supp21.pdf" class="uri">https://www.biostat.jhsph.edu/~iruczins/teaching/140.652/supp21.pdf</a><a href="https://www.biostat.jhsph.edu/~iruczins/teaching/140.652/supp21.pdf/">/</a></li>
+</ol>
+<p>We will also practice material learned so far to reinforce some of the code learned so far. This week, we’ll learn how to perform chi-square tests. To do so, I am using Mike Love and Irizarry’s book (recommended for life sciences). You can also visit Mike Love’s github page to use the book online <a href="%22https://github.com/genomicsclass/labs%22">here</a>.</p>
 <p><em>Loading libraries</em></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p><em>Loading the file</em> You need not worry about this chunk. You may simply run it. Or you could also download the mice dataset from the website and read in as a csv file for practice.</p>
+<p><em>Loading the file:</em> You need not worry about this chunk. You may simply run it. Or you could also download the mice dataset from the website and read in as a csv file for practice.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>dir <span class="ot">&lt;-</span> <span class="st">"https://raw.githubusercontent.com/genomicsclass/dagdata/master/inst/extdata/"</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>url <span class="ot">&lt;-</span> <span class="fu">paste0</span>(dir, <span class="st">"femaleMiceWeights.csv"</span>)</span>
@@ -192,15 +198,6 @@ X-squared = 1.5, df = 1, p-value = 0.2207</code></pre>
 </div>
 <p><strong>To Do</strong></p>
 <p>Nothing!!! This marks the end of our lab section - let’s spend time practicing.</p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../../../../Spring_files/andy.jpeg" class="img-fluid figure-img" width="350"></p>
-</figure>
-</div>
-</div>
-</div>
 </section>
 
 </main>

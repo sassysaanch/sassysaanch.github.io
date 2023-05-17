@@ -35,7 +35,7 @@ Now read in the NC births dataset.
 ```
 
 1. Rename at least 3 variables
-2. Calculate the mean and standard deviation of the babies. 
+2. Calculate the mean and standard deviation of birth weight. 
 3. How many babies are premies and how many were low birth weight?
 4. Do you think mothers who smoked are more or less likely to have babies with low birth weight? [Hint: create a two by two table] Use assigned readings or external resources to back up your answer when you report the difference.
 

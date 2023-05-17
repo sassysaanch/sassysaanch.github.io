@@ -74,6 +74,9 @@ dat_new <-
 test <- chisq.test(table(dat_new$Diet, dat_new$new_weight))
 test
 
+# Fisher's exact
+
+fisher.test(dat_new$Diet, dat_new$new_weight)
 ```
 
 **To Do**

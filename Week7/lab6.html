@@ -157,8 +157,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </section>
 </section>
-<section id="performing-chi-square-and-t-tests." class="level1">
-<h1>Performing chi-square and t-tests.</h1>
+<section id="performing-chi-squares-and-t-tests." class="level1">
+<h1>Performing chi-squares and t-tests.</h1>
 <p>Let’s understand the syntax for both these tests and use p-values to determine significance.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Perform a t-test for one categorical and one continuous var</span></span>
@@ -194,6 +194,22 @@ mean in group chow   mean in group hf
 
 data:  table(dat_new$Diet, dat_new$new_weight)
 X-squared = 1.5, df = 1, p-value = 0.2207</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Fisher's exact</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="fu">fisher.test</span>(dat_new<span class="sc">$</span>Diet, dat_new<span class="sc">$</span>new_weight)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Fisher's Exact Test for Count Data
+
+data:  dat_new$Diet and dat_new$new_weight
+p-value = 0.2203
+alternative hypothesis: true odds ratio is not equal to 1
+95 percent confidence interval:
+ 0.03289187 1.77138188
+sample estimates:
+odds ratio 
+ 0.2661096 </code></pre>
 </div>
 </div>
 <p><strong>To Do</strong></p>

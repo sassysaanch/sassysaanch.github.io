@@ -14,7 +14,7 @@ Office Hours: After class, by appointment and TBD
 ## Labs and datasets are housed on this page
 
 
-### Before attending Week 1 class on 4.5.2023, you MUST install R and R Studio
+### Before attending Week 1 class on 4.5.2024, you MUST install R and R Studio
 *Here is the [INSTALLATION GUIDE](https://teacherscollege.screenstepslive.com/a/1135059-install-r-and-r-studio-for-mac).*
 
 ## Course Schedule

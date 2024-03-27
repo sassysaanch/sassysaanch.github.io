@@ -1,16 +1,15 @@
-# Biotech Seminar Spring 2023: Health: Before, During and After Pregnancy
+# Biotech Seminar Spring 2024: Health: Before, During and After Pregnancy
 
 Instructor: Saanchi Shah
 
-Slack Channel: <https://biotech23-ss.com>
+Slack Channel: TBD
 
-Slack Channel Invite: <https://join.slack.com/t/biotech23-ss/shared_invite/zt-1rj6fi11h-R~2Dr4b63Zc03qIHWuF32g>
+Slack Channel Invite: TBD
 
-Class: W 3:00 PM - 05:50 PM Covel 210
+Class: R 9:30 AM - 12:20 PM Covel 210
 
-Office Hours: After class, Monday 2 - 3 PM @ Anderson courtyard or by appointment
+Office Hours: After class, by appointment and TBD
 
-Zoom link: <https://ucla.zoom.us/j/4437962705>
 
 ## Labs and datasets are housed on this page
 

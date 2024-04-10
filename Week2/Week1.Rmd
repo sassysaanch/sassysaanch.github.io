@@ -107,7 +107,7 @@ It is always important to know what kind of variables you are working with in or
 
 str(hp_characters)
 
-# How many rows and variables are does this dataset have?
+# How many rows and variables does this dataset have?
 # What type of variables do you observe?
 
 ```

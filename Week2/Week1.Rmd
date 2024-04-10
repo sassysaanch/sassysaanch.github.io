@@ -1,5 +1,5 @@
 ---
-title: "Seminar HP Characters Exercise: Week 1 lab"
+title: "Seminar HP Characters Exercise: Week 2 lab"
 author: "Saanchi Shah"
 date: "2023-03-06"
 output: html_document
